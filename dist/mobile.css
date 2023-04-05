@@ -1,0 +1,51 @@
+@media screen and (max-width: 768px) {
+    .btn-menu {
+        text-decoration: none;
+        color: white;
+        font-size: 200%;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 3px;
+        margin: 5px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header .btn {
+        float: none;
+    }
+
+    header a {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+/* Navbar */
+
+    .menu li a {
+        transition: all .3s ease;
+    }
+  
+    .menu a:hover {
+        color: #39f;
+    }
+    
+    button {
+        font-size: 25px;
+        padding: 9px 25px;
+        background: #0d94a6;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+    
+    button:hover {
+        background: #39f;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="style/forum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+      <a href="../index.html" class="brand">Home</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="info.html">Info</a>
+        <a href="store.html">Store</a>
+        <a href="forum.html">Forum</a>
+        <nav id="search-nav" class="flex-container">
+          <nav class="container">
+            <div class="search">
+              <input type="text" placeholder=" Cerca qualcosa" />
+            </div>
+          </nav>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>  
+
+    <section class="section-main">
+      <h1>EndGames  Forum</h1>
+    </section>
+
+    <section class="section-two">
+      <h2>Titolo di esempio</h2>
+      <p>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.<br>Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. </p>
+
+      <form class="post">
+        <input name="username" type="text" placeholder="Inserisci nome utente">
+        <input name="email" type="text" placeholder="Inserisci la tua email">
+        <textarea name="textarea" rows="5"></textarea>
+      </form>
+    </section>
+
+    <script>
+      //Nav effect on scroll
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+
+      //Responsive navigation sidebar
+      var menu = document.querySelector('.menu');
+      var menuBtn = document.querySelector('.menu-btn');
+      var closeBtn = document.querySelector('.close-btn');
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+      });
+
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+      });
+    </script>
+
+<a href=""class="btn1"><i class="Forum"></i>Post</button></a>
+  </body>
+</html>
+
